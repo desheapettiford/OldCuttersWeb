@@ -1,0 +1,22 @@
+.header {
+	color:gray;
+    margin: 0;
+    padding: 40px 0px 0px 25px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.overview-grid-style {
+	color:seagreen;
+	font-size: 30px;
+	border: 1px solid rgba(223, 212, 212, 0.8);
+	text-align: center;
+}
+
+.overview-grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: white;
+	padding: 10px 30px 30px 0px;
+	border-radius: 10px;
+}
