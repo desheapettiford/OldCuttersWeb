@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clientele Functionaility</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css" type="text/css">
+	<link rel="stylesheet" href="css/businessexpensesrecords.css" type="text/css">
+</head>
+    <body>
+		<header>
+			<div class="topbar">
+				<h1>Cutters Lawn Care | Business Expenses</h1>
+			</div>
+
+			<div class="container">
+				<nav>
+					<ul>
+						<li><button data-header-buttons><a href="index.html">Overview</a></button></li>
+						<li><button data-header-buttons><a href="customerrecords.html">Customer Records</a></button></li>
+						<li><button data-header-buttons><a href="customerfinancialrecords.html">Customer Financial Records</a></button></li>
+						<li><button data-header-buttons><a href="businessexpensesrecords.html">Business Expenses Records</a></button></li>
+						<li><button data-header-buttons><a href="queryfunctions.html">Query Functions</a></button></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<hr>
+		<h1 class="headerlabel">Business Expenses Records</h1>
+		<div id="center">
+			<img src="images/gascan.jpg" alt="tips">
+		</div>
+
+		<table>
+			<tr>
+				<td>
+					<form class="inputFrame" onsubmit="event.preventDefault(); onFormSubmit()" autocomplete="off">
+						<div>
+							<label>Description:</label>
+							<input type="text" name="description" id="description">
+							<label>Amount Paid:</label>
+							<input type="text" name="amountpaid" id="amountpaid">
+							<label>Date:</label>
+							<input type="text" name="date" id="date">
+							<button class="form-action-buttons"Submit>Submit</button>
+						</div>
+					</form>
+				</td>
+			</tr>
+		</table>
+
+		<table class="list" id="recordlist">
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Amount Paid</th>
+					<th>Receipt</TH>
+					<th>Date</th>
+				</tr>
+			</thead>
+				
+			
+			<!-- container for elements -->
+			<tbody>
+
+			</tbody>
+		</table>
+		<hr>
+		<script src="js/businessexpensesrecords.js" defer></script>
+    </body>
+</html>

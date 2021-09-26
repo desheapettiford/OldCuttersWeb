@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Clientele Functionaility</title>
+		<link rel="stylesheet" href="css/global.css" type="text/css">
+		<link rel="stylesheet" href="css/customerfinancialrecords.css" type="text/css">
+		<meta charset = "UTF-8">
+	</head>
+
+	<body>
+		<header>
+			<div class="topbar">
+				<h1>Cutters Lawn Care | Financial Records</h1>
+			</div>
+
+			<div class="container">
+				<nav>
+					<ul>
+						<li><button data-header-buttons><a href="index.html">Overview</a></button></li>
+						<li><button data-header-buttons><a href="customerrecords.html">Customer Records</a></button></li>
+						<li><button data-header-buttons><a href="customerfinancialrecords.html">Customer Financial Records</a></button></li>
+						<li><button data-header-buttons><a href="businessexpensesrecords.html">Business Expenses Records</a></button></li>
+						<li><button data-header-buttons><a href="queryfunctions.html">Query Functions</a></button></li>
+					</ul>
+				</nav>
+		</header>
+
+		<label class="info">*must enter: (exact fullname OR exact address) to use database functionaility</label>
+		<hr>
+		<h1 class="headerlabel">Payment Records</h1>
+		<div id="center">
+			<img src="images/dollarsign.png" alt="tips">
+		</div>
+
+		<table>
+			<tr>
+				<td>
+					<form class="inputFrame" onsubmit="event.preventDefault(); onPaymentFormSubmit()" autocomplete="off">
+						<div>
+							<label>Full Name:</label>
+							<input type="text" name="paymentfullname" id="paymentfullname">
+							<label>(OR)</label>
+							<label>Address:</label>
+							<input type="text" name="paymentaddress" id="paymentaddress">
+							<label>Amount Paid:</label>
+							<input type="text" name="paymentamount" id="paymentamount">
+							<label>Date:</label>
+							<input type="text" name="paymentdate" id="paymentdate">
+							<button class="form-action-buttons"Submit>Submit</button>
+						</div>
+					</form>
+				</td>
+			</tr>
+		</table>
+
+		<table class="list" id="paymentrecordlist">
+			<thead>
+				<tr>
+					<th>Full Name</th>
+					<th>Address</th>
+					<th>Date</th>
+					<th>Payment Amount</th>	
+					<th>Old Balance</th>
+					<th>New Balance</th>	
+					<th>Database Effected</th>
+				</tr>
+			</thead>
+				
+			<tbody>
+
+			</tbody>
+		</table>
+
+		<hr>
+
+			<h1 class="headerlabel">Tip Records</h1>
+			<div id="center">
+				<img src="images/tips.png" alt="tips">
+			</div>
+
+			<table>
+				<tr>
+					<td>
+						<form class="inputFrame" onsubmit="event.preventDefault(); onTipFormSubmit()" autocomplete="off">
+							<div>
+								<label>Full Name:</label>
+								<input type="text" name="tipfullname" id="tipfullname">
+								<label>(OR)</label>
+								<label>Address:</label>
+								<input type="text" name="tipaddress" id="tipaddress">
+								<label>Tip Amount:</label>
+								<input type="text" name="tipamount" id="tipamount">
+								<label>Date:</label>
+								<input type="text" name="tipdate" id="tipdate">
+								<button class="form-action-buttons"Submit>Submit</button>
+							</div>
+						</form>
+					</td>
+				</tr>
+			</table>
+
+			<table class="list" id="tiprecordlist">
+				<thead>
+					<tr>
+						<th>Full Name</th>
+						<th>Address</th>
+						<th>Date</th>
+						<th>Tip Amount</th>
+						<th>Total Tips</th>	
+						<th>Database Effected</th>
+					</tr>
+				</thead>
+					
+				<!-- container for elements -->
+				<tbody>
+	
+				</tbody>
+			</table>
+
+			<hr>
+
+		<script src="js/customerfinancialrecords.js" defer></script>
+	</body>
+</html>

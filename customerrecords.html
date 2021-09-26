@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Clientele Functionaility</title>
+		<link rel="stylesheet" href="css/global.css" type="text/css">
+		<link rel="stylesheet" href="css/customerrecords.css" type="text/css">
+		<meta charset = "UTF-8">
+	</head>
+
+	<body>
+		<header>
+			<div class="topbar">
+				<h1>Cutters Lawn Care | Customer Records</h1>
+			</div>
+
+			<div class="container">
+				<nav>
+					<ul>
+						<li><button data-header-buttons><a href="index.html">Overview</a></button></li>
+						<li><button data-header-buttons><a href="customerrecords.html">Customer Records</a></button></li>
+						<li><button data-header-buttons><a href="customerfinancialrecords.html">Customer Financial Records</a></button></li>
+						<li><button data-header-buttons><a href="businessexpensesrecords.html">Business Expenses Records</a></button></li>
+						<li><button data-header-buttons><a href="queryfunctions.html">Query Functions</a></button></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<table>
+			<tr>
+				<td>
+					<form onsubmit="event.preventDefault(); onFormSubmit()" autocomplete="off">
+						<div>
+							<label>Full Name</label>
+							<input type="text" name="fullname" id="fullname">
+						</div>
+
+						<div>
+							<label>Phone Number</label>
+							<input type="text" name="phonenumber" id="phonenumber">
+						</div>
+						<div>
+							<label>Address</label>
+							<input type="text" name="address" id="address">
+						</div>
+
+						<div>
+							<label>Cut Amount</label>
+							<input type="text" name="cutamount" id="cutamount">
+						</div>
+
+						<div>
+							<label>Preferred Cut Day</label>
+							<input type="text" name="preferredcutday" id="preferredcutday">
+						</div>
+
+						<div>
+							<label>Money Owed</label>
+							<input type="text" name="moneyowed" id="moneyowed">
+						</div>
+
+						<div>
+							<label>Special Information</label>
+							<input type="text" name="specialinformation" id="specialinformation">
+						</div>
+
+
+						<div class="form-action-buttons">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</td>
+
+				<!-- list records -->
+				<td>
+					<table class="list" id="customerlist">
+						<thead>
+							<tr>
+								<th>Full Name</th>
+								<th>Address</th>
+								<th>Phone Number</th>
+								<th>Cut Amount</th>
+								<th>Preferred Cut Day</th>
+								<th>Total Tip Amount</th>
+								<th>Money Owed</th>
+								<th>Special Information</th>
+								<th>Settings</th>
+							</tr>
+						</thead>
+
+						<tbody>
+
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<script src="js/customerrecords.js" defer></script>
+	</body>
+</html>
